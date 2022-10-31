@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time-Table</title>
+    </head>
+    <body>
+
+        <style>
+        h2{
+            text-align:center;
+            
+        }
+
+
+            table {
+              border: 1px solid black;
+              background: rgb(205, 128, 205);
+              font-weight: 600;
+               display: table;
+               border-collapse: separate;
+               box-sizing: border-box;
+               text-indent: initial;
+               margin-inline-start: auto;
+               margin-inline-end: auto;
+               -webkit-border-horizontal-spacing: 10px;
+               -webkit-border-vertical-spacing: 10px;
+            }
+
+            .top_button button{
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                 font-size: 18px;
+                 border: none;
+                 outline: none;
+                background-color: rgb(117, 4, 110);
+                 color: white;
+                cursor: pointer;
+                 padding: 15px;
+                 border-radius: 4px;
+                text-transform: uppercase;
+                font-family: Ubuntu, sans-serif;
+                font-weight: bolder;
+            }
+
+           
+                button {
+                  appearance: auto;
+                  writing-mode: horizontal-tb !important;
+                  letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    align-items: flex-start;
+    text-rendering: auto;
+            }
+            </style>
+        <h2>TIME-TABLE</h2>
+       
+        <table align="centre" border="1px" cellpadding="30" cellspacing="80">
+            <tr>
+                <th>DAY<br>period</th>
+                <th>1<br>9:00-9:50</th>
+                <th>2<br>9:50-10:40</th> 
+                <th>3<br>10:40-11:30</th>
+                <th>4<br>11:30-12:20</th>
+                <th rowspan="7">LUNCH<br>12:00-1:30</th>
+                <th>5<br>1:30-2:20</th> 
+                <th>6<br>2:20-3:10</th>
+                <th>7<br>3:10-4:00</th>
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>CA303</td>
+                <td>CA301</td>
+                <td></td>
+                <td>CA307</td>
+                <td colspan="3">CA311</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>CA307</td>
+                <td colspan="2">CA302</td>
+                <td>CA304</td>
+                <td colspan="3">CA310</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="3">CA310</td>
+                <td>CA302</td>
+                <td>CA304</td>
+                <td>CA301</td>
+                <td>CA303</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>CA307</td>
+                <td></td>
+                <td>CA301</td>
+                <td></td>
+                <td>CA302</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>CA304</td>
+                <td colspan="3">CA311</td>
+                <td></td>
+                <td colspan="2">CA303</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td></td>
+                <td>CA304</td>
+                <td>CA301</td>
+                <td>CA307</td>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+
+        <div class="top_button">
+            <button onclick="topfunction()" id="mybtn" title="go to top" style="display: block;">Top</button>
+        </div>
+    </body>
+</html>
